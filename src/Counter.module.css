@@ -1,0 +1,16 @@
+body {
+    background-color: dodgerblue;
+}
+
+.counter {
+    background-color: white;
+}
+
+.value {
+    font-size: 500px;
+}
+
+.valueFive {
+    font-size: 500px;
+    color: red;
+}
