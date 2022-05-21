@@ -1,16 +1,46 @@
 body {
-    background-color: dodgerblue;
+    background-color: aliceblue;
 }
 
 .counter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 10px solid silver;
+    border-radius: 100px;
     background-color: white;
+    height: 700px;
+    width: 400px;
+    padding: 20px;
+    margin-top: 100px;
 }
 
 .value {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
     font-size: 500px;
+    border: 1px solid;
+    border-radius: 50px;
+    width: 300px;
+    background-color: skyblue;
 }
 
 .valueFive {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
     font-size: 500px;
+    border: 1px solid black;
+    border-radius: 50px;
+    width: 300px;
     color: red;
+    background-color: skyblue;
+}
+
+.buttons {
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    margin-top: 20px;
 }
