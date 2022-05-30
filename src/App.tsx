@@ -1,22 +1,24 @@
 import React, {useState} from 'react';
 import './App.css';
 import {Counter} from "./Counter";
-
-export type ValueType = number
+import Setting from "./Setting";
 
 
 function App() {
-    const [value, setValue] = useState<ValueType>(0)
+    const [minValue, setMinValue] = useState(0)
+    const [maxValue, setMaxValue] = useState(5)
+
     function start () {
-        let newValue = value + 1;
-        setValue(newValue)
-        if(value > 4) {
-            setValue(5)
+        let newValue = minValue + 1;
+        setMinValue(newValue)
+        if(minValue === maxValue) {
+            return
         }
     }
     return (
         <div className={"App"}>
-            <Counter value={value} setValue={setValue} start={start}/>
+            <Counter minValue={minValue} setMinValue={setMinValue} maxValue={maxValue} setMaxValue={setMaxValue} start={start}/>
+            <Setting minValue={minValue} maxValue={maxValue} setMinValue={setMinValue} setMaxValue={setMaxValue}/>
         </div>)
 }
 
