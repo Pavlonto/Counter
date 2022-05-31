@@ -1,2 +1,21 @@
 .setting {
+    position: absolute;
+    left: 500px;
+    top: 500px;
+    border: 1px solid;
+    padding: 10px;
 }
+
+.max {
+    font-size: 20px;
+    padding-left: 90px;
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.min {
+    font-size: 20px;
+    padding-left: 90px;
+    width: 100px;
+}
+

@@ -1,14 +1,14 @@
 import React from 'react';
-import s from "./Button.module.css";
 
 type ButtonType = {
-    disabled: boolean
+    disabled?: boolean
     onClick: () => void
     name: string
+    classname?: string
 }
 
 export const Button = (props: ButtonType) => {
     return (
-        <button className={s.button} disabled={props.disabled} onClick={props.onClick}>{props.name}</button>
+        <button className={props.classname} disabled={props.disabled} onClick={props.onClick}>{props.name}</button>
     );
 };
